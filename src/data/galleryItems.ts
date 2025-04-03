@@ -3,7 +3,7 @@ export const galleryItems = [
     id: 1,
     title: 'Modern Glass Staircase',
     category: 'Staircases',
-    imageUrl: 'https://images.unsplash.com/photo-1597713395472-9d83eb6f8f62?auto=format&fit=crop&q=80&w=1200',
+    imageUrl: '/home/jtechy1/medranobuilders/images/molding.jpg',
   },
   {
     id: 2,
