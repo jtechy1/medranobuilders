@@ -3,7 +3,7 @@ export const galleryItems = [
     id: 1,
     title: 'Modern Glass Staircase',
     category: 'Staircases',
-    imageUrl: '/home/jtechy1/medranobuilders/images/molding.jpg',
+    imageUrl: '/images/molding.jpg',
   },
   {
     id: 2,
