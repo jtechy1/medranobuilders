@@ -26,8 +26,8 @@ export default function SimpleContactForm() {
 
     try {
       await emailjs.send(
-        process.env.EMAILJS_SERVICE_ID || '',
-        process.env.EMAILJS_TEMPLATE_ID || '',
+        import.meta.env.VITE_EMAILJS_SERVICE_ID || '',
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID || '',
         {
           to_email: 'melvin@medranobuilders.com',
           from_name: formData.name,
@@ -35,7 +35,7 @@ export default function SimpleContactForm() {
           phone: formData.phone,
           message: formData.message,
         },
-        process.env.EMAILJS_PUBLIC_KEY || ''
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY || ''
       );
 
       toast.success('Message sent successfully!');
