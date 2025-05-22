@@ -24,10 +24,10 @@ export default function ContactForm() {
 
     try {
       await emailjs.send(
-        process.env.EMAILJS_SERVICE_ID || '',
-        process.env.EMAILJS_TEMPLATE_ID || '',
+        import.meta.env.VITE_EMAILJS_SERVICE_ID || '',
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID || '',
         {
-          to_email: 'melvin@medranobuilders.com',
+          to_email: 'tech.jmartinez@outlook.com',
           from_name: formData.name,
           from_email: formData.email,
           phone: formData.phone,
@@ -37,7 +37,7 @@ export default function ContactForm() {
           budget: formData.budget,
           message: formData.description,
         },
-        process.env.EMAILJS_PUBLIC_KEY || ''
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY || ''
       );
 
       toast.success('Quote request sent successfully!');
